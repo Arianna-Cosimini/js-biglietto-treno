@@ -5,13 +5,19 @@
 }
 
 body{
+    
     background-image: url('../img/viajar-tren-harry-potter.avif');
     background-size: cover;
     background-position: center;
 }
 .my-height{
     height: 300px;
+    animation-name: price 2s;
+    transform: scale(2.2);
 }
-#price{
-    transform: translatey(100px);
+
+@keyframes price{
+    
 }
+
+
