@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../img/viajar-tren-harry-potter.avif');
+    background-size: cover;
+    background-position: center;
+}
+.my-height{
+    height: 300px;
+}
+#price{
+    transform: translatey(100px);
+}

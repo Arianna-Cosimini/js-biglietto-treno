@@ -13,9 +13,9 @@
 
 
 
-const kmToTravel = prompt ('Quanti chilometri desideri percorrere?')
+// const kmToTravel = prompt ('Quanti chilometri desideri percorrere?')
 
-const age = Number (prompt ('Quanti anni hai?'));
+// const age = Number (prompt ('Quanti anni hai?'));
 
 const priceKm = 0.21;
 
@@ -60,10 +60,13 @@ if (age > 18 && age < 66){
 
 // bonus
 
-// if (age < 0  age >100){
-//     alert('Dati inseriti non corretti')
-//     console.log("L'utente ha un'età inferiore a 0 o superiore a 100")
-// }
+if (!isNaN(age) && age >= 0 && age <= 100){
+    
+    console.log("L'utente ha un'età inferiore a 0 o superiore a 100")
+}else {
+    alert('Dati inseriti non corretti')
+    console.log("L'età dell'utente é minore di 0 o superiore a 100")
+}
 
 
     if (!isNaN(age) && age >0){
