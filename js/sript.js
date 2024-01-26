@@ -15,7 +15,7 @@
 
 const kmToTravel = prompt ('Quanti chilometri desideri percorrere?')
 
-// const age = prompt ('Quanti anni hai?')
+const age = Number (prompt ('Quanti anni hai?'));
 
 const priceKm = 0.21;
 
@@ -40,3 +40,12 @@ console.log('Il prezzo scontato per over 65 è:€' + priceOver65);
 
 
 // fine prezzo over 65
+
+if (age>17<66){
+    document.getElementById('price').innerHTML='Il prezzo del tuo biglietto é: <br> €'+ priceTicket;
+} else if (age < 19){
+    document.getElementById('price').innerHTML='Il prezzo del biglietto per te che hai meno di 18 anni é: <br> €'+ priceMinors;
+} else if (age > 65){
+    document.getElementById('price').innerHTML='Il prezzo del biglietto per te che hai più di 65 anni é: <br> €'+ priceOver65;
+
+}
